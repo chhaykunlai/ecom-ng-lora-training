@@ -1,0 +1,3 @@
+Each page has to have its associated CSS file. 
+
+NO CSS rules are allowed within any page file. You can only include mixins

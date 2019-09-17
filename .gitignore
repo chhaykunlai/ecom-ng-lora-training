@@ -1,0 +1,55 @@
+# OS generated files
+######################
+.DS_Store
+
+# Eclipse generated
+#####################
+cartridges/*/*.tern-project
+
+# Coverage Folder
+#####################
+coverage
+coverage-client
+coverage-server
+.nyc_output
+
+# Node Modules Folder
+#####################
+node_modules
+
+# Idea
+#####################
+.idea/
+cartridges/jsconfig.json
+
+# VS Code
+####################
+.vscode/
+cartridges/.vscode/
+cartridges/dw.json
+cartridges/jsconfig.json
+
+# Sandbox connect for Node/Prophet
+####################
+cartridges/dw.json
+dw.json
+lora.json
+
+# NG LORA
+#####################
+cartridges/*/cartridge/static/default/sass/_sass-inline-svg.scss
+cartridges/*/cartridge/static/default/sass/_sass-inline-svg-data.scss
+cartridges/*/cartridge/static/default/javascripts/vendors
+cartridges/*/cartridge/static/default/javascripts/system.config.js
+cartridges/*/cartridge/static/default/dist
+cartridges/*/cartridge/static/default/javascripts/templates/
+cartridges/*/cartridge/templates/handlebars_compiled/
+jspm_packages
+
+# Styleguide
+#####################
+cartridges/*/cartridge/static/default/styleguide-build
+
+# Lighthouse
+#####################
+lighthouse-report.json

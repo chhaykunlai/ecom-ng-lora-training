@@ -1,0 +1,49 @@
+{
+  "name": "ecom-ng-lora-training",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lora-cli": "lora-cli",
+    "build": "lora-cli build --skip-bundle",
+    "build:production": "lora-cli build --skip-bundle --production",
+    "watch": "lora-cli watch --skip-bundle",
+    "jspm": "jspm",
+    "postinstall": "npm run jspm install",
+    "create": "lora-cli create",
+    "lint": "lora-cli lint-js && lora-cli lint-sass",
+    "lint:js": "lora-cli lint-js",
+    "lint:js:fix": "lora-cli lint-js --fix",
+    "lint:sass": "lora-cli lint-sass",
+    "handlebars": "lora-cli handlebars",
+    "sass": "lora-cli sass",
+    "test:client": "lora-cli test --client",
+    "test:server": "lora-cli test --server",
+    "styleguide:build": "lora-cli styleguide",
+    "styleguide:serve": "lora-cli styleguide --serve",
+    "lighthouse": "lora-cli lighthouse",
+    "lighthouse:headless": "lora-cli lighthouse --headless",
+    "update": "lora-cli self-update"
+  },
+  "author": "Chhaykun Lai",
+  "license": "ISC",
+  "devDependencies": {
+    "jspm": "^0.16.55",
+    "lora-cli": "git+ssh://git@bitbucket-ssh.e-loreal.com/ecom-lora/ecom-lora-cli.git"
+  },
+  "directories": {
+    "packages": "jspm_packages"
+  },
+  "jspm": {
+    "directories": {
+      "packages": "cartridges/app_training/cartridge/static/default/javascripts/vendors"
+    },
+    "configFile": "system.config.js",
+    "devDependencies": {
+      "babel": "npm:babel-core@^5.8.24",
+      "babel-runtime": "npm:babel-runtime@^5.8.24",
+      "core-js": "npm:core-js@^1.1.4"
+    }
+  }
+}

@@ -1,0 +1,87 @@
+{
+    "global": {
+        "mainCartridge": "app_training",
+        "cartridgePath": [
+            "app_training",
+            "ui_lora",
+            "app_catalog",
+            "app_base",
+            "app_cart",
+            "app_account",
+            "app_checkout",
+            "app_demo",
+            "app_bazaarvoice"
+        ],
+        "sass": true,
+        "es6": true,
+        "lintOnSave": true,
+        "sourceMaps": true,
+        "jspm": true,
+        "handlebars": true,
+        "tests": true,
+        "move": true,
+        "lintJs": true,
+        "lintSass": true,
+        "dwdav": true,
+        "inlineSVG": true,
+        "imagemin": true,
+        "styleguide": true
+    },
+    "plugins": {
+        "eslint": {
+            "maxWarnings": 20
+        },
+        "stylelint": {
+            "ignoreFiles": false
+        },
+        "dwdav": {
+            "serverFilesExtension": ["isml", "json", "properties", "xml", "js", "ds"],
+            "clientFilesExtension": ["js", "css", "json", "png", "jpg", "gif", "map", "ttf", "woff", "woff2"]
+        },
+        "styleguide": {
+            "logoSrc": "data:image/png;base64,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"
+        },
+        "lighthouse": {
+            "categories": {
+                "performance": {
+                    "minScore": 100
+                },
+                "pwa": {
+                    "minScore": 100
+                },
+                "seo": {
+                    "minScore": 100
+                },
+                "accessibility": {
+                    "minScore": 100
+                },
+                "best-practices": {
+                    "minScore": 100
+                }
+            }
+        }
+    },
+    "paths": {
+        "sourceRoot": "cartridges/app_training/cartridge/static/default",
+        "distRoot": "cartridges/app_training/cartridge/static/default/dist",
+        "modules": {
+            "images": {
+                "root": "images",
+                "sources": [
+                    "**/*.{gif,jpg,png,webp}"
+                ],
+                "dist": "images"
+            },
+            "server-scripts": [
+                {
+                    "sourceRoot": "cartridges/app_training",
+                    "root": "cartridge",
+                    "sources": [
+                        "scripts/**/*.{js,ds}",
+                        "controllers/**/*.js"
+                    ]
+                }
+            ]
+        }
+    }
+}
