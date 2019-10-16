@@ -1,0 +1,47 @@
+{
+  "type": "object",
+  "name": "deliveryestimationdate",
+  "action": "Delivery-GetEstimationDate",
+  "properties": {
+      "pid": {
+          "type": "string",
+          "custom": {
+            "wrapperTagAttributes": {
+                "class": "h-hidden"
+            },
+            "tagAttributes":{
+                "type":"hidden"
+            },
+            "label":false
+          }
+      },
+      "postalcode": {
+          "type": "string",
+          "pattern": "^[ABCEGHJKLMNPRSTVXYabceghjklmnprstvxy]{1}\\d{1}[A-Za-z]{1} *\\d{1}[A-Za-z]{1}\\d{1}$",
+          "custom": {
+              "label": true,
+              "wrapperTagAttributes": {
+                "class": "c-product-delivery-date__field"
+              }
+          }
+      },
+      "submit": {
+          "type": "string",
+          "custom": {
+              "subType": "button",
+              "aria": true,
+              "wrapperTagAttributes": {
+                  "class": "m-autosize"
+              },
+              "tagAttributes": {
+                  "type": "submit"
+              }
+          }
+      }
+  },
+  "required": [
+      "pid",
+      "postalcode"
+  ],
+  "order": ["postalcode", "pid", "submit"]
+}

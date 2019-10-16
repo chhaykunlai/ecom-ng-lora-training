@@ -1,1 +1,1 @@
-<iscomment>Partial Template which will be overloaded on brands</iscomment>
+${pdict.registry.product.deliveryestimationdate()}

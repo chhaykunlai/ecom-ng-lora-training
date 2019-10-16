@@ -1,0 +1,9 @@
+{
+  "registeredComponents": {
+    "product_deliveryestimationdate": {
+      "listeners": [
+        "deliveryestimationdate.submit"
+      ]
+    }
+  }
+}

@@ -1,0 +1,18 @@
+<form
+    action="{{form.action}}"
+    method="POST"
+    name="{{form.name}}"
+    data-component="{{componentName}}"
+    class="c-product-delivery-date {{cssClass}} {{form.cssClass}}"
+    data-component-options='{{include_json componentOptions}}'
+    data-js-delivery-date-form>
+    <div class="c-product-delivery-date__response" data-js-delivery-date-message></div>
+    <div class="c-product-delivery-date__title" data-js-delivery-date-title  data-component="{{toggleComponentName}}" data-component-options='{{include_json toggleDataOptions}}'>
+        <span class="c-product-delivery-date__calculate">{{text.deliveryDateTitle}}</span>
+        <span class="c-product-delivery-date__edit">{{text.deliveryDateEdit}}</span>
+    </div>
+    <div class="c-product-delivery-date__form-row c-form__row m-group m-grouped">
+        {{common_formfields form.name}}
+        <input type="hidden" name="{{csrf.name}}" value="{{csrf.value}}">
+    </div>
+</form>

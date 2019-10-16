@@ -1,0 +1,8 @@
+{
+    "components": {
+        "calculatedeliverydate": {
+          "suppressRender": true
+        },
+        "deliveryestimationdate": {}
+    }
+}
