@@ -1,0 +1,3 @@
+<isdecorate template="decorators/page">
+    ${pdict.registry.global.quiz()}
+</isdecorate>
