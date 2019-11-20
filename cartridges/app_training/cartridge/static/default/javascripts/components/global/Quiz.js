@@ -1,5 +1,6 @@
 import Component from 'core/Component';
 import { on, off } from 'toolbox/event';
+import Registry from 'core/ComponentRegistry';
 
 /**
  * This is a description of the Quiz constructor function.
@@ -18,12 +19,10 @@ export default class Quiz extends Component {
     }
 
     /**
-     * Init the different state of the component
-     * It helps to avoid heavy DOM manipulation
+     * All selectors must be cached. Never cache elements that are out of the component scope
      */
-    initState() {
-        // this.state.isActive = true
-        // this.state.isLoading = true
+    initCache() {
+        this.selectors.quizStepper = this.element.querySelector('[data-js-quizzStepper]');
     }
 
     /**
@@ -39,8 +38,7 @@ export default class Quiz extends Component {
      * after clicking on step button
      */
     onStepChanged() {
-        // eslint-disable-next-line no-alert
-        alert('step change');
+        Registry.getComponent(this.selectors.quizStepper).activateNextButton();
     }
 
     /**
