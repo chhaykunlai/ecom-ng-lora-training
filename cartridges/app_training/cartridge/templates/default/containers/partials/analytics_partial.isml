@@ -1,0 +1,1 @@
+<isprint value="${require('*/utils/Registry').getComponent('global','impactradius').render('call')}" encoding="off" />
