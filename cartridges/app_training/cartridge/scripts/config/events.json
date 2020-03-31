@@ -1,0 +1,11 @@
+{
+    "registeredModules" : {
+        "universalTrackingCookieModule": {
+            "scriptName": "app_training/cartridge/scripts/util/universalTrackingCookie",
+            "listeners": [
+                "login.successful",
+                "newslettersignup.submit.success"
+            ]
+        }
+    }
+}
