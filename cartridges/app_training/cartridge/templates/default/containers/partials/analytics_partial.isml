@@ -1,1 +1,1 @@
-<iscomment>Partial Template which will be overloaded on brands</iscomment>
+<isprint value="${require('*/utils/Registry').getComponent('global','impactradius').render('call')}" encoding="off" />
